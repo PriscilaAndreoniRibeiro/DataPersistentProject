@@ -8,8 +8,7 @@ using UnityEngine.UI;
 [DefaultExecutionOrder(1000)]
 public class MenuUIHandler : MonoBehaviour
 {
-    public string namePlayer;
-    public GameObject inputField;
+   
 
     // Start is called before the first frame update
     void Start()
@@ -22,16 +21,12 @@ public class MenuUIHandler : MonoBehaviour
     {
         
     }
-
-    public void NewName(string name)
+    public void ReadPlayerName(string playerNameInput)
     {
-        //mehtod calls input field nameplayer
-        //namePlayer = inputField.GetComponent<Text>().text;
-        //Debug.Log(namePlayer);
-
-        MainManager.Instance.NamePlayer = name;
-
+        MainManager.Instance.PlayerName = playerNameInput;
+        Debug.Log(MainManager.Instance.PlayerName);
     }
+
 
     public void StartNew()
     {
@@ -45,7 +40,5 @@ public class MenuUIHandler : MonoBehaviour
 #else
         Application.Quit();
 #endif
-
-
     }
 }

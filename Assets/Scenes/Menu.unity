@@ -526,8 +526,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a6a27ec30a1e4e23be2ae42f1926f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  namePlayer: 
-  inputField: {fileID: 2083167160}
 --- !u!1 &1203708708
 GameObject:
   m_ObjectHideFlags: 0
@@ -836,8 +834,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1037146784}
         m_TargetAssemblyTypeName: MenuUIHandler, Assembly-CSharp
-        m_MethodName: NewName
-        m_Mode: 1
+        m_MethodName: ReadPlayerName
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
