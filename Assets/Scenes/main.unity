@@ -583,8 +583,8 @@ MonoBehaviour:
   ScoreText: {fileID: 188020406}
   BestScoreText: {fileID: 142479397}
   PlayerName: 
-  PlayerWithHighScore: 
-  BestScore: 0
+  PlayerWithHighScore: Marcos
+  BestScore: 30
   GameOverText: {fileID: 474497238}
 --- !u!1 &455529321
 GameObject:

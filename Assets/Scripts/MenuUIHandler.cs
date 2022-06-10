@@ -8,7 +8,6 @@ using UnityEngine.UI;
 [DefaultExecutionOrder(1000)]
 public class MenuUIHandler : MonoBehaviour
 {
-   
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +20,9 @@ public class MenuUIHandler : MonoBehaviour
     {
         
     }
-    public void ReadPlayerName(string playerNameInput)
+    public void ReadPlayerName(string playernameinput)
     {
-        MainManager.Instance.PlayerName = playerNameInput;
+        MainManager.Instance.PlayerName = playernameinput;
         Debug.Log(MainManager.Instance.PlayerName);
     }
 
@@ -34,7 +33,7 @@ public class MenuUIHandler : MonoBehaviour
     }
 
     public void Quit()
-    {
+    { 
 #if UNITY_EDITOR
         EditorApplication.ExitPlaymode();
 #else

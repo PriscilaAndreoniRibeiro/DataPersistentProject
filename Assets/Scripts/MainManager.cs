@@ -16,8 +16,8 @@ public class MainManager : MonoBehaviour
 
     public static MainManager Instance;
     public string PlayerName;
-    public string PlayerWithHighScore;
-    public int BestScore;
+    public string PlayerWithHighScore = "Marcos";
+    public int BestScore = 30;
 
     public GameObject GameOverText;
 
@@ -47,15 +47,16 @@ public class MainManager : MonoBehaviour
         }
         if (MainManager.Instance != null)
         {
-            int bestScore = MainManager.Instance.BestScore;
-            string playerName = MainManager.Instance.PlayerWithHighScore;
-            BestScoreText.text = "Best Score: " + playerName + " : " + bestScore;
+            //int bestScore = MainManager.Instance.BestScore;
+            //string playerName = MainManager.Instance.PlayerWithHighScore;
+            BestScoreText.text = "Best Score: " + PlayerWithHighScore + " : " + BestScore;
         }
     }
 
     private void BestScoreDisplay()
     {
         throw new System.NotImplementedException();
+
     }
 
     private void Update()
@@ -97,7 +98,7 @@ public class MainManager : MonoBehaviour
     private void AddPoint(int point)
     {
         m_Points += point;
-        ScoreText.text = $"Score : {m_Points}";
+        ScoreText.text = "Name:" + PlayerName + "Score:" + m_Points;
     }
 
     public void GameOver()
