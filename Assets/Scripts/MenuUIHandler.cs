@@ -4,15 +4,17 @@ using UnityEngine;
 using UnityEditor;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System;
 
 [DefaultExecutionOrder(1000)]
 public class MenuUIHandler : MonoBehaviour
 {
+    public GameObject InputField;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+    
     }
 
     // Update is called once per frame
@@ -22,8 +24,8 @@ public class MenuUIHandler : MonoBehaviour
     }
     public void ReadPlayerName(string playernameinput)
     {
-        MainManager.Instance.PlayerName = playernameinput;
-        Debug.Log(MainManager.Instance.PlayerName);
+        DataPersistent.Instance.PlayerName = playernameinput;
+        Debug.Log(DataPersistent.Instance.PlayerName);
     }
 
 
