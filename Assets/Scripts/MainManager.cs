@@ -80,7 +80,7 @@ public class MainManager : MonoBehaviour
     private void AddPoint(int point)
     {
         m_Points += point;
-        ScoreText.text = "Name:" + DataPersistent.Instance.PlayerName + "Score:" + m_Points;
+        ScoreText.text = "Name:" + DataPersistent.Instance.PlayerName + " Score:" + m_Points;
     }
 
     public void GameOver()
