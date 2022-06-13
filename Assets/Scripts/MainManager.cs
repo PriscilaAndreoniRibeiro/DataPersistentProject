@@ -41,6 +41,7 @@ public class MainManager : MonoBehaviour
         {
             //int bestScore = MainManager.Instance.BestScore;
             //string playerName = MainManager.Instance.PlayerWithHighScore;
+
             BestScoreText.text = "Best Score: " + DataPersistent.Instance.PlayerWithHighScore + " : " + DataPersistent.Instance.BestScore;
         }
     }
